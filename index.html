@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="text-white">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg bg-black text-light">
         <div class="container-fluid">
-          <h3 class="navbar-brand col-lg-8" href="#">PeterSambo</h3>
+          <h3 class="navbar-brand col-lg-7" href="#">PeterSambo</h3>
           <button
             class="navbar-toggler"
             type="button"
@@ -23,7 +23,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"
+              ><img src="assets/icon-hamburger.svg" alt=""
+            /></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-between"
@@ -40,22 +42,23 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -63,12 +66,17 @@
       </nav>
     </header>
     <!-- this is the start of the main section -->
-    <main class="container-fluid mt-5">
+    <main class="container-fluid mt-2">
+      <!-- ! this is the start of section one -->
       <section
-        class="section-one row d-flex justify-content-center container-fluid mt-5"
+        class="section-one d-flex justify-content-between container mt-5"
       >
-        <div class="col-lg-6 d-flex justify-content-center flex-column">
-          <h1 class="display-3">Hello! I'm A Web Designer Based In Abuja</h1>
+        <div class="row d-flex justify-content-center flex-column">
+          <h1 class="display-4 col-lg-6 text-start w-100">
+            <span class="text-danger display-1">Hello!</span><br />
+            I'm A <span class="text-danger">Web Designer </span><br />
+            Based In Abuja
+          </h1>
           <div>
             <button class="btn btn-primary btn-md m-2">See Projects</button
             ><button class="btn btn-danger btn-md m-2">Contact Me</button>
@@ -78,13 +86,11 @@
           <div class="circle"></div>
         </div>
       </section>
-      <section
-        class="container section-two row d-flex justify-content-center mt-5"
-      >
-        <div
-          class="container col-lg-12 d-flex justify-content-center flex-column"
-        >
-          <h1 class="text-center text-capitalize display-5">about me</h1>
+      <section class="section-two mt-5">
+        <div class="container d-flex justify-content-center flex-column">
+          <h1 class="text-center text-capitalize display-5" id="about">
+            about me
+          </h1>
           <p class="text-center">
             With over three years of experience in the tech industry, i have
             developed a unique skill set that combines creative eye with a deep
@@ -92,7 +98,7 @@
             improve my craft and stay up-to-date with the latest design trends.
             in my free time i watch football and listen to music.
           </p>
-          <div class="row d-flex justify-content-start">
+          <div class="row d-flex justify-content-center">
             <div class="col-6">Name:</div>
             <div class="col-6">Peter Sambo</div>
           </div>
@@ -106,11 +112,11 @@
           </div>
           <div class="row d-flex">
             <div class="col-6">Phone:</div>
-            <div class="col-6">+2349137165829</div>
+            <div class="col-6 overflow-hidden">+2349137165829</div>
           </div>
           <div class="row d-flex">
             <div class="col-6">Email:</div>
-            <div class="col-6">Peter2great2@gmail.com</div>
+            <div class="col-6 overflow-hidden">Peter2great2@gmail.com</div>
           </div>
           <div class="row d-flex">
             <div class="col-6">Course of Study:</div>
@@ -118,8 +124,9 @@
           </div>
         </div>
       </section>
+      <!-- ! this is the start of section three 'RESUME' -->
       <section class="section-three text-center container">
-        <h1 class="text-capitalize display-5 mt-3">Resume</h1>
+        <h1 class="text-capitalize display-5 mt-3" id="resume">Resume</h1>
         <p>
           Here is a simple breakdown of my resume, i have over three years of
           experience in website development, i've worked in the ICT unit of the
@@ -127,13 +134,12 @@
           with Mega Brains and Eagle-Eye computer institute among others.
         </p>
       </section>
-      <section
-        class="section-four container-fluid gap-4 text-center justify-content-center"
-      >
-        <div class="row justify-content-center">
-          <div class="grid-container col col-lg-4 col-md-6 col-sm-12">
-            <h3 class="text-danger display-6">2018-2024</h3>
-            <h2 class="display-6 text-capitalize">computer operator</h2>
+      <!-- ! this is the start of section four -->
+      <section class="section-four container text-center">
+        <div class="row justify-content-evenly gap-3">
+          <div class="grid-container col-md-3">
+            <h3 class="text-danger">2018-2024</h3>
+            <h2 class="text-capitalize">computer operator</h2>
             <h4 class="text-capitalize">university of Abuja</h4>
             <img
               src="assets/uniabuja.jpg"
@@ -146,9 +152,9 @@
               federal capital territory of Nigeria
             </p>
           </div>
-          <div class="grid-container col col-lg-4 col-md-6 col-sm-12">
-            <h3 class="text-danger display-6">2018-2024</h3>
-            <h2 class="display-6 text-capitalize">computer operator</h2>
+          <div class="grid-container col-md-3">
+            <h3 class="text-danger">2018-2024</h3>
+            <h2 class="text-capitalize">computer operator</h2>
             <h4 class="text-capitalize">d-eagles eye computer institute</h4>
             <img
               src="assets/eagle.jpg"
@@ -162,9 +168,9 @@
             </p>
           </div>
 
-          <div class="grid-container col col-lg-4 col-md-6 col-sm-12">
-            <h3 class="text-danger display-6">2018-2024</h3>
-            <h2 class="text-capitalize display-6">computer operator</h2>
+          <div class="grid-container col-md-3">
+            <h3 class="text-danger">2018-2024</h3>
+            <h2 class="text-capitalize">computer operator</h2>
             <h4 class="text-capitalize">university of Abuja</h4>
             <img
               src="assets/uniabuja.jpg"
@@ -177,9 +183,9 @@
               federal capital territory of Nigeria
             </p>
           </div>
-          <div class="grid-container col col-lg-4 col-md-6 col-sm-12">
-            <h3 class="text-danger display-6">2018-2024</h3>
-            <h2 class="text-capitalize display-6">computer operator</h2>
+          <div class="grid-container col-md-3">
+            <h3 class="text-danger">2018-2024</h3>
+            <h2 class="text-capitalize">computer operator</h2>
             <h4 class="text-capitalize">d-eagles eye computer institute</h4>
             <img
               src="assets/eagle.jpg"
@@ -194,9 +200,10 @@
           </div>
         </div>
       </section>
+      <!-- ! this is the start of section five 'SERVICE' -->
       <section class="section-five">
         <div class="text-center container">
-          <h2 class="text-capitalize display-5">service</h2>
+          <h2 class="text-capitalize display-5" id="services">services</h2>
           <p>
             I can render a lot of service for you ranging from Website design,
             Website development and Android App Development using React Native a
@@ -206,57 +213,54 @@
           </p>
         </div>
 
-        <div class="row gap-4 justify-content-center container-fluid">
-          <div
-            class="service-grid col col-sm-6 col-lg-3"
-            style="
-              background-image: url('assets/devops-mobile-app-development.jpg');
-            "
-          >
-            <img src="" alt="" />
-            <h4>Web design</h4>
-          </div>
-          <div
-            class="service-grid col col-sm-6 col-lg-3"
-            style="background-image: url('assets/photography2.jpeg')"
-          >
-            <img src="" alt="" />
-            <h4>photography</h4>
-          </div>
+        <div class="container">
+          <div class="row gap-2 justify-content-center">
+            <div
+              class="service-grid col-xl-4"
+              style="
+                background-image: url('assets/devops-mobile-app-development.jpg');
+              "
+            >
+              <h4>Web design</h4>
+            </div>
+            <div
+              class="service-grid col-xl-4"
+              style="background-image: url('assets/photography2.jpeg')"
+            >
+              <h4>photography</h4>
+            </div>
 
-          <div
-            class="service-grid col col-sm-6 col-lg-3"
-            style="background-image: url('assets/economist_2.png')"
-          >
-            <img src="" alt="" />
-            <h4 style="color: blue">economist</h4>
-          </div>
-          <div
-            class="service-grid col col-sm-6 col-lg-3"
-            style="background-image: url('assets/web\ development\ 2.png')"
-          >
-            <img src="" alt="" />
-            <h4>app developing</h4>
-          </div>
-          <div
-            class="service-grid col col-sm-12 col-lg-3"
-            style="background-image: url('assets/Word.jpg')"
-          >
-            <img src="" alt="" />
-            <h4>typist</h4>
-          </div>
-          <div
-            class="service-grid col col-sm-6 col-lg-3"
-            style="background-image: url('assets/branding2.jpg')"
-          >
-            <img src="" alt="" />
-            <h4></h4>
+            <div
+              class="service-grid col-xl-4"
+              style="background-image: url('assets/economist_2.png')"
+            >
+              <h4 style="color: blue">economist</h4>
+            </div>
+            <div
+              class="service-grid col-xl-4"
+              style="background-image: url('assets/web\ development\ 2.png')"
+            >
+              <h4>app developing</h4>
+            </div>
+            <div
+              class="service-grid col-xl-4"
+              style="background-image: url('assets/Word.jpg')"
+            >
+              <h4>typist</h4>
+            </div>
+            <div
+              class="service-grid col-xl-4"
+              style="background-image: url('assets/branding2.jpg')"
+            >
+              <h4>branding</h4>
+            </div>
           </div>
         </div>
       </section>
+      <!-- ! this is the start of section six 'SKILLS' -->
       <section class="section-six mt-3">
         <div class="text-center container">
-          <h2 class="text-capitalize display-5">Skills</h2>
+          <h2 class="text-capitalize display-5" id="skills">Skills</h2>
           <p>
             Below is my summary of skills i know, i'm good with HTML, CSS and
             Javascript. in addition, i know Bootstrap a css framework. i also
@@ -332,9 +336,10 @@
           </div>
         </div>
       </section>
+      <!-- ! this is the start of section seven 'PROJECTS'-->
       <section class="section-seven text-center container">
         <div class="container">
-          <h2 class="display-5 text-capitalize">my projects</h2>
+          <h2 class="display-5 text-capitalize" id="projects">my projects</h2>
           <p>
             I have done and completed over 12 projects using HTML, CSS,
             javascript, React.Js, Bootstrap, jQuery, tailwind, scss and node.Js.
@@ -348,7 +353,7 @@
           <img
             src="assets/manage landing page 1.png"
             alt=""
-            class="col col-lg-9"
+            class="col col-lg-9 img-fluid"
           />
 
           <div class="col col-lg-3">
@@ -357,7 +362,6 @@
               cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
               sequi excepturi aut qui. Nisi, recusandae eligendi!
             </p>
-            <a href="#" class="btn btn-primary btn-lg">See Next Project</a>
           </div>
         </div>
         <div
@@ -365,17 +369,23 @@
         >
           <img src="assets/vr.png" alt="" class="col col-lg-9" />
 
-          <div class="col col-lg-3">
+          <div class="col col-lg-3 img-fluid">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
               sequi excepturi aut qui. Nisi, recusandae eligendi!
             </p>
-            <a href="#" class="btn btn-primary btn-lg">See Next Project</a>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center mt-2">
-          <img src="assets/sneekers.png" alt="" class="col col-lg-9" />
+        <div
+          class="row justify-content-center align-items-center mt-2"
+          id="sneekers"
+        >
+          <img
+            src="assets/sneekers.png"
+            alt=""
+            class="col col-lg-9 img-fluid"
+          />
 
           <div class="col col-lg-3">
             <p>
@@ -383,13 +393,17 @@
               cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
               sequi excepturi aut qui. Nisi, recusandae eligendi!
             </p>
-            <a href="#" class="btn btn-primary btn-lg">See Next Project</a>
           </div>
         </div>
         <div
           class="row justify-content-center align-items-center flex-row-reverse mt-2"
+          id="ludo"
         >
-          <img src="assets/ludo.png" alt="" class="col col-lg-5 ludo-img" />
+          <img
+            src="assets/ludo.png"
+            alt=""
+            class="col col-lg-5 ludo-img img-fluid"
+          />
 
           <div class="col col-lg-7">
             <p>
@@ -397,13 +411,12 @@
               cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
               sequi excepturi aut qui. Nisi, recusandae eligendi!
             </p>
-            <a href="#" class="btn btn-primary btn-lg">Contact Me</a>
           </div>
         </div>
       </section>
       <section class="section-eight mt-3">
         <div class="container text-center">
-          <h2 class="display-5">Contact Me</h2>
+          <h2 class="display-5" id="contact">Contact Me</h2>
           <p>
             Do you have any question that you want to ask me? you can send me a
             message below by entering your name and your email address. your
@@ -419,22 +432,25 @@
             class="d-flex justify-content-center align-items-center flex-column gap-2"
           >
             <div>
-              <label for="name">Name: <input type="text" /></label>
+              <input type="text" placeholder="Enter your Name" />
             </div>
             <div>
-              <label for="name">Email: <input type="email" /></label>
+              <input type="email" placeholder="Enter your Email" />
             </div>
             <div>
-              <label for="name">Message: <textarea></textarea></label>
+              <textarea placeholder="Your message"></textarea>
             </div>
             <button class="btn btn-success btn-lg">Send</button>
           </fieldset>
         </form>
       </section>
     </main>
-    <footer class="bg-dark">
+    <!-- ! this is the footer section -->
+    <footer
+      class="d-flex justify-content-center align-items-center flex-column bg-dark"
+    >
       <div
-        class="container-fluid p-5 mt-3 d-flex justify-content-center align-items-center gap-4"
+        class="container-fluid p-3 mt-3 d-flex justify-content-center align-items-center gap-2"
       >
         <img src="assets/icon-facebook.svg" alt="icon-facebook" />
         <img src="assets/icon-twitter.svg" alt="icon-twitter" />
@@ -442,11 +458,15 @@
         <img src="assets/icon-pinterest.svg" alt="icon-pinterest" />
       </div>
       <div class="text-center">
-        <a href="#" class="text-decoration-none text-danger">Back to Top</a>
+        <small
+          ><a href="#" class="text-decoration-none text-danger"
+            >Back to Top</a
+          ></small
+        >
       </div>
       <div class="text-center">
-        <lgall class="text-white"
-          >Peter Sambo &copy; 2023 All Rights Reserved</lgall
+        <small class="text-white text-center"
+          >Peter Sambo &copy; 2023 All Rights Reserved</small
         >
       </div>
     </footer>

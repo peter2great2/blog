@@ -6,22 +6,39 @@
   --gridcolors: rgb(77, 77, 95, 0.2);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red;  */
+}
+body {
+  /* background-image: url("assets/World\ Map\ \(1\).svg"); */
+  background-color: black;
+  font-size: 25px;
+}
 a {
-  color: #fff;
-  font-size: 14px;
+  color: white;
+  font-size: 20px;
   font-weight: bolder;
   text-align: center;
+}
+ul {
 }
 a:hover {
   color: var(--primarycolor);
   border-bottom: 3px solid var(--primarycolor);
 }
-
+a:visited {
+  color: white;
+}
 #home {
   background-color: var(--primarycolor);
 }
 
 /* this is the styling of the main section */
+.section-two {
+}
 
 .circle {
   width: 300px;
@@ -41,9 +58,12 @@ a:hover {
   border-radius: 04px;
   margin: 5px;
   padding: 15px 10px;
+  font-size: 12px;
+  width: fit-content;
 }
 
 .service-grid {
+  width: 400px;
   height: 200px;
   background-color: var(--gridcolors);
   border-radius: 04px;
@@ -53,11 +73,11 @@ a:hover {
 }
 /*  this is the start of section six*/
 progress {
-  width: 350px;
-  height: 20px;
+  width: 400px;
+  height: 10px;
   accent-color: var(--secondarycolor);
   position: relative;
-  bottom: 12px;
+  bottom: 30px;
 }
 .container-seven img {
   width: 60%;
@@ -72,11 +92,42 @@ progress:hover {
   height: 300px;
 }
 input {
-  padding: 2px;
-  width: 200px;
+  width: 500px;
+  border-top: black;
+  border-bottom: 1px solid blue;
+  border-right: black;
+  border-left: black;
+  background-color: black;
+  color: white;
 }
-
+textarea {
+  border-top: black;
+  border-bottom: 1px solid blue;
+  border-right: black;
+  border-left: black;
+  background-color: black;
+}
+input:focus,
+textarea:focus {
+  border: red 1px solid;
+  outline: none;
+}
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  a {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    width: 60px;
+    float: right;
+    margin-right: 10px;
+    gap: 1;
+  }
+  ul {
+    gap: 0;
+  }
   .circle {
     width: 200px;
     height: 200px;
@@ -85,6 +136,9 @@ input {
     justify-content: center;
     align-items: center;
   }
+  .section-two {
+    left: 0;
+  }
   .grid-container {
     font-size: 12px;
   }
@@ -92,6 +146,13 @@ input {
     font-size: 12;
   }
   progress {
-    width: 200px;
+    width: 300px;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+  footer img {
+    width: 15px;
   }
 }
