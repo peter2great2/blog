@@ -33,7 +33,7 @@ a:hover {
   background-repeat: no-repeat;
   box-shadow: 0 0 20px 5px var(--primarycolor),
     0 0 20px 5px var(--secondarycolor);
-  background-image: url("/assets/1651688434720-removebg-preview.png");
+  background-image: url("  assets/1651688434720-removebg-preview.png ");
 }
 
 .grid-container {
