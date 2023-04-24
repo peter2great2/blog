@@ -1,0 +1,97 @@
+:root {
+  --primarycolor: rgb(211, 50, 171);
+  --secondarycolor: rgb(67, 67, 172);
+  --primaryfontsize: 18px;
+  /* --gridcolors: #1e1e1e; */
+  --gridcolors: rgb(77, 77, 95, 0.2);
+}
+
+a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+a:hover {
+  color: var(--primarycolor);
+  border-bottom: 3px solid var(--primarycolor);
+}
+
+#home {
+  background-color: var(--primarycolor);
+}
+
+/* this is the styling of the main section */
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--primarycolor);
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px 5px var(--primarycolor),
+    0 0 20px 5px var(--secondarycolor);
+  background-image: url("/assets/1651688434720-removebg-preview.png");
+}
+
+.grid-container {
+  background-color: var(--gridcolors);
+  border-radius: 04px;
+  margin: 5px;
+  padding: 15px 10px;
+}
+
+.service-grid {
+  height: 200px;
+  background-color: var(--gridcolors);
+  border-radius: 04px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*  this is the start of section six*/
+progress {
+  width: 350px;
+  height: 20px;
+  accent-color: var(--secondarycolor);
+  position: relative;
+  bottom: 12px;
+}
+.container-seven img {
+  width: 60%;
+}
+
+progress:hover {
+  accent-color: green;
+}
+
+.ludo-img {
+  width: 400px;
+  height: 300px;
+}
+input {
+  padding: 2px;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container {
+    font-size: 12px;
+  }
+  .service-grid {
+    font-size: 12;
+  }
+  progress {
+    width: 200px;
+  }
+}
