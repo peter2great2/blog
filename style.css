@@ -24,6 +24,7 @@ a {
   text-align: center;
 }
 ul {
+  gap: 15px;
 }
 a:hover {
   color: var(--primarycolor);
@@ -148,7 +149,9 @@ textarea:focus {
   progress {
     width: 300px;
   }
-
+  input {
+    width: 80vw;
+  }
   footer {
     font-size: x-small;
   }
