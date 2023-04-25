@@ -10,7 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red;  */
+  /* border: 1px solid red; */
 }
 body {
   /* background-image: url("assets/World\ Map\ \(1\).svg"); */
@@ -33,9 +33,6 @@ a:hover {
 
 a:any-link {
   color: white;
-}
-#home {
-  background-color: var(--primarycolor);
 }
 
 /* this is the styling of the main section */
@@ -126,9 +123,20 @@ textarea:focus {
     float: right;
     margin-right: 10px;
     gap: 1;
+
+    padding: 5px;
+    border-radius: 5px;
   }
   ul {
     gap: 0;
+
+    float: right;
+    position: relative;
+    left: 5px;
+    animation: example2 1s ease-out;
+  }
+  li {
+    border-bottom: 1px solid black;
   }
   .circle {
     width: 200px;
@@ -137,6 +145,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
   }
   .section-two {
     left: 0;
@@ -158,5 +167,14 @@ textarea:focus {
   }
   footer img {
     width: 15px;
+  }
+}
+
+@keyframes example2 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
