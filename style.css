@@ -123,6 +123,9 @@ textarea:focus {
   body {
     font-size: 16px;
   }
+  nav {
+    background-color: black;
+  }
   nav a {
     color: white;
     font-size: 12px;
@@ -141,10 +144,16 @@ textarea:focus {
     float: right;
     position: relative;
     left: 5px;
-    animation: example2 1s ease-out;
+    animation: example2 0.5s ease-in-out;
   }
   li {
     border-bottom: 1px solid black;
+  }
+  .dropdown-pic {
+    background-image: url("assets/1651688434720-removebg-preview.png");
+    background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .circle {
     width: 200px;
