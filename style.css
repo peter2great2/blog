@@ -13,9 +13,9 @@
   /* border: 1px solid red; */
 }
 body {
-  /* background-image: url("assets/World\ Map\ \(1\).svg"); */
   font-size: 25px;
   background-image: url("assets/sprinkle.svg");
+  background-color: black;
 }
 a {
   color: white;
