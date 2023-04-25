@@ -24,13 +24,14 @@ a {
   text-align: center;
 }
 ul {
-  gap: 15px;
+  gap: 12px;
 }
 a:hover {
   color: var(--primarycolor);
   border-bottom: 3px solid var(--primarycolor);
 }
-a:visited {
+
+a:any-link {
   color: white;
 }
 #home {
