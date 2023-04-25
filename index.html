@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Peter Sambo Blog</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body class="text-white bg-black">
     <header>
-      <nav class="navbar navbar-expand-lg bg-black text-light">
+      <nav class="navbar navbar-expand-lg mb-3 text-light sticky-top">
         <div class="container-fluid">
-          <h3 class="navbar-brand col-lg-7" href="#">PeterSambo</h3>
+          <h3 class="navbar-brand col-lg-7 logo text-primary" href="#">
+            peter<span id="sambo" class="text-danger">Sambo</span>
+          </h3>
           <button
             class="navbar-toggler"
             type="button"
@@ -69,7 +71,7 @@
     <main class="container-fluid mt-2">
       <!-- ! this is the start of section one -->
       <section
-        class="section-one d-flex justify-content-around container-fluid mx-auto mt-5"
+        class="section-one d-flex justify-content-around container mx-auto mt-5"
       >
         <div class="row d-flex justify-content-center flex-column">
           <h1 class="display-4 col-lg-6 text-start w-100">
@@ -78,8 +80,10 @@
             Based In Abuja
           </h1>
           <div>
-            <button class="btn btn-primary btn-md m-2">See Projects</button
-            ><button class="btn btn-danger btn-md m-2">Contact Me</button>
+            <a href="#projects" class="btn btn-danger btn-md m-2"
+              >See Projects</a
+            >
+            <a href="#contact" class="btn btn-primary btn-md">Contact Me</a>
           </div>
         </div>
         <div class="col-lg-6 d-flex justify-content-center">
@@ -88,45 +92,50 @@
       </section>
       <section class="section-two mt-5">
         <div class="container d-flex justify-content-center flex-column">
-          <h1 class="text-center text-capitalize display-5" id="about">
+          <h1
+            class="text-center text-capitalize display-5 text-danger"
+            id="about"
+          >
             about me
           </h1>
           <p class="text-center">
             With over three years of experience in the tech industry, i have
-            developed a unique skill set that combines creative eye with a deep
-            understanding of web development. i'm always looking for ways to
-            improve my craft and stay up-to-date with the latest design trends.
-            in my free time i watch football and listen to music.
+            developed a unique skill set that combines creative eye and also
+            with a deep understanding of web development. i'm always looking for
+            ways to improve my craft and stay up-to-date with the latest design
+            trends. in my free time i watch football and listen to music.
           </p>
           <div class="row d-flex justify-content-center">
-            <div class="col-6">Name:</div>
-            <div class="col-6">Peter Sambo</div>
+            <div class="col-5">Name:</div>
+            <div class="col-7">Peter Sambo</div>
           </div>
           <div class="row d-flex">
-            <div class="col-6">Sex:</div>
-            <div class="col-6">Male</div>
+            <div class="col-5">Sex:</div>
+            <div class="col-7">Male</div>
           </div>
           <div class="row d-flex">
-            <div class="col-6">Address:</div>
-            <div class="col-6">Area F, Nyanya FCT, Abuja</div>
+            <div class="col-5">Address:</div>
+            <div class="col-7">Area F, Nyanya FCT, Abuja</div>
           </div>
           <div class="row d-flex">
-            <div class="col-6">Phone:</div>
-            <div class="col-6 overflow-hidden">+2349137165829</div>
+            <div class="col-5">Phone:</div>
+            <div class="col-7 overflow-hidden">+2349137165829</div>
           </div>
           <div class="row d-flex">
-            <div class="col-6">Email:</div>
-            <div class="col-6 overflow-hidden">Peter2great2@gmail.com</div>
+            <div class="col-5">Email:</div>
+            <div class="col-7">Peter2great2@gmail.com</div>
           </div>
           <div class="row d-flex">
-            <div class="col-6">Course of Study:</div>
-            <div class="col-6">Bsc. Economics</div>
+            <div class="col-5">Course of Study:</div>
+            <div class="col-7">Bsc. Economics</div>
           </div>
         </div>
       </section>
       <!-- ! this is the start of section three 'RESUME' -->
       <section class="section-three text-center container">
-        <h1 class="text-capitalize display-5 mt-3" id="resume">Resume</h1>
+        <h1 class="text-capitalize display-5 mt-3 text-danger" id="resume">
+          Resume
+        </h1>
         <p>
           Here is a simple breakdown of my resume, i have over three years of
           experience in website development, i've worked in the ICT unit of the
@@ -135,11 +144,13 @@
         </p>
       </section>
       <!-- ! this is the start of section four -->
-      <section class="section-four container text-center">
+      <section
+        class="section-four container justify-content-around text-center"
+      >
         <div class="row justify-content-evenly gap-3">
           <div class="grid-container col-md-3">
             <h3 class="text-danger">2018-2024</h3>
-            <h2 class="text-capitalize">computer operator</h2>
+            <h2 class="text-capitalize">Computer Lab Operator</h2>
             <h4 class="text-capitalize">university of Abuja</h4>
             <img
               src="assets/uniabuja.jpg"
@@ -203,7 +214,9 @@
       <!-- ! this is the start of section five 'SERVICE' -->
       <section class="section-five">
         <div class="text-center container">
-          <h2 class="text-capitalize display-5" id="services">services</h2>
+          <h2 class="text-capitalize display-5 text-danger" id="services">
+            services
+          </h2>
           <p>
             I can render a lot of service for you ranging from Website design,
             Website development and Android App Development using React Native a
@@ -213,7 +226,7 @@
           </p>
         </div>
 
-        <div class="container">
+        <div class="container text-uppercase">
           <div class="row gap-2 justify-content-center">
             <div
               class="service-grid col-xl-4"
@@ -234,7 +247,7 @@
               class="service-grid col-xl-4"
               style="background-image: url('assets/economist_2.png')"
             >
-              <h4 style="color: blue">economist</h4>
+              <h4>economist</h4>
             </div>
             <div
               class="service-grid col-xl-4"
@@ -260,7 +273,9 @@
       <!-- ! this is the start of section six 'SKILLS' -->
       <section class="section-six mt-3">
         <div class="text-center container">
-          <h2 class="text-capitalize display-5" id="skills">Skills</h2>
+          <h2 class="text-capitalize display-5 text-danger" id="skills">
+            Skills
+          </h2>
           <p>
             Below is my summary of skills i know, i'm good with HTML, CSS and
             Javascript. in addition, i know Bootstrap a css framework. i also
@@ -337,87 +352,103 @@
         </div>
       </section>
       <!-- ! this is the start of section seven 'PROJECTS'-->
-      <section class="section-seven text-center container">
-        <div class="container">
-          <h2 class="display-5 text-capitalize" id="projects">my projects</h2>
-          <p>
-            I have done and completed over 12 projects using HTML, CSS,
-            javascript, React.Js, Bootstrap, jQuery, tailwind, scss and node.Js.
-            below are some of the projects which include a VR website, a
-            standard Ludo board game and a product site landing page, feel free
-            to explore all projects by clicking the 'see all' lind provided
-            below. You are welcome
-          </p>
-        </div>
-        <div class="row justify-content-center align-items-center mt-2">
-          <img
-            src="assets/manage landing page 1.png"
-            alt=""
-            class="col col-lg-9 img-fluid"
-          />
-
-          <div class="col col-lg-3">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
-              sequi excepturi aut qui. Nisi, recusandae eligendi!
-            </p>
-          </div>
-        </div>
+      <div class="container text-center">
+        <h2 class="display-5 text-capitalize text-danger" id="projects">
+          my projects
+        </h2>
+        <p>
+          I have done and completed over 12 projects using HTML, CSS,
+          javascript, React.Js, Bootstrap, jQuery, tailwind, scss and node.Js.
+          below are some of the projects which include a VR website, a standard
+          Ludo board game and a product site landing page, feel free to explore
+          all projects by clicking the 'see all' lind provided below. You are
+          welcome
+        </p>
+      </div>
+      <div class="container carousel-container">
         <div
-          class="row flex-row-reverse justify-content-center align-items-center mt-2"
+          id="carouselId"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="2000"
         >
-          <img src="assets/vr.png" alt="" class="col col-lg-9" />
-
-          <div class="col col-lg-3 img-fluid">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
-              sequi excepturi aut qui. Nisi, recusandae eligendi!
-            </p>
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="First slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="1"
+              aria-label="Second slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="2"
+              aria-label="Third slide"
+            ></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img
+                src="assets/manage landing page 1.png"
+                class="w-100 d-block"
+                alt="First slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>peter</h3>
+                <p>peter sambo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/sneekers.png"
+                class="w-100 d-block"
+                alt="Second slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Reean</h3>
+                <p>I love Peter</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/vr.png"
+                class="w-100 d-block"
+                alt="Third slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Philomena Atang</h3>
+                <p>I also love Peter</p>
+              </div>
+            </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div
-          class="row justify-content-center align-items-center mt-2"
-          id="sneekers"
-        >
-          <img
-            src="assets/sneekers.png"
-            alt=""
-            class="col col-lg-9 img-fluid"
-          />
-
-          <div class="col col-lg-3">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              cumque impedit in rerum, aspernatur nobis, consectetur sed ipsam
-              sequi excepturi aut qui. Nisi, recusandae eligendi!
-            </p>
-          </div>
-        </div>
-        <div
-          class="row justify-content-center align-items-center flex-row-reverse mt-2"
-          id="ludo"
-        >
-          <img
-            src="assets/ludo.png"
-            alt=""
-            class="col col-lg-5 ludo-img img-fluid"
-          />
-
-          <div class="col col-lg-7">
-            <p>
-              This is a standard ludo game that is designed by me, Ludo is a
-              popular board game played mostly in Africa and Asia, this game can
-              be played by 2,3 or 4 players, it has four houses that can be
-              shared among the players.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
       <section class="section-eight mt-3">
         <div class="container text-center">
-          <h2 class="display-5" id="contact">Contact Me</h2>
+          <h2 class="display-5 text-danger" id="contact">Contact Me</h2>
           <p>
             Do you have any question that you want to ask me? you can send me a
             message below by entering your name and your email address. your
@@ -433,15 +464,15 @@
             class="d-flex justify-content-center align-items-center flex-column gap-2"
           >
             <div>
-              <input type="text" placeholder="Enter your Name" />
+              <input type="text" placeholder="Name" />
             </div>
             <div>
-              <input type="email" placeholder="Enter your Email" />
+              <input type="email" placeholder="Email" />
             </div>
             <div>
               <textarea placeholder="Your message"></textarea>
             </div>
-            <button class="btn btn-success btn-lg">Send</button>
+            <button class="btn btn-success btn-md mb-2">Send</button>
           </fieldset>
         </form>
       </section>
@@ -451,21 +482,18 @@
       class="d-flex justify-content-center align-items-center flex-column bg-dark"
     >
       <div
-        class="container-fluid p-3 mt-3 d-flex justify-content-center align-items-center gap-2"
+        class="container-fluid p-3 mt-3 d-flex justify-content-center align-items-center gap-4"
       >
         <img src="assets/icon-facebook.svg" alt="icon-facebook" />
         <img src="assets/icon-twitter.svg" alt="icon-twitter" />
         <img src="assets/icon-instagram.svg" alt="icon-instagram" />
         <img src="assets/icon-pinterest.svg" alt="icon-pinterest" />
       </div>
-      <div class="text-center">
-        <small
-          ><a href="#" class="text-decoration-none text-danger"
-            >Back to Top</a
-          ></small
+
+      <div class="text-center flex-column d-flex justify-content-center">
+        <a href="#" class="text-decoration-none text-danger text-center"
+          >Back to Top</a
         >
-      </div>
-      <div class="text-center">
         <small class="text-white text-center"
           >Peter Sambo &copy; 2023 All Rights Reserved</small
         >
@@ -473,6 +501,6 @@
     </footer>
 
     <script src="bootstrap/bootstrap.js"></script>
-    <script src="script.j"></script>
+    <script src="script.js"></script>
   </body>
 </html>
