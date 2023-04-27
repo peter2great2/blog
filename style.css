@@ -119,6 +119,32 @@ textarea:focus {
   border: red 1px solid;
   outline: none;
 }
+/* for the dark mode */
+.tcontainer {
+  width: 40px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: rgb(32, 31, 31);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.circle-toggle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 1px;
+  cursor: pointer;
+}
+#circle-two {
+  background-color: yellow;
+  position: relative;
+  bottom: 16px;
+  left: 20px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px;
@@ -149,6 +175,10 @@ textarea:focus {
   li {
     border-bottom: 1px solid black;
   }
+  .tcontainer {
+    margin-right: 30px;
+  }
+
   .dropdown-pic {
     background-image: url("assets/1651688434720-removebg-preview.png");
     background-position: bottom left;
