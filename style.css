@@ -139,7 +139,6 @@ textarea:focus {
   cursor: pointer;
 }
 #circle-two {
-  background-color: yellow;
   position: relative;
   bottom: 16px;
   left: 20px;
