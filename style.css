@@ -13,7 +13,7 @@
   /* border: 1px solid red; */
 }
 body {
-  font-size: 25px;
+  font-size: 18px;
   background-image: url("assets/Sprinkle.svg");
   background-color: black;
 }
@@ -77,7 +77,7 @@ a:any-link {
 }
 
 .service-grid {
-  width: 400px;
+  /* width: 400px; */
   height: 200px;
   background-color: var(--gridcolors);
   border-radius: 04px;
@@ -149,6 +149,9 @@ textarea:focus {
   position: relative;
   bottom: 16px;
   left: 20px;
+}
+footer img:hover {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 768px) {
