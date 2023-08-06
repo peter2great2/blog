@@ -18,20 +18,27 @@ body {
   background-color: black;
 }
 .logo {
-  font-size: 0.5em;
+  font-size: 1.5em;
 }
 #sambo {
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 nav {
   background-color: black;
-
-  font-size: 18px;
+  font-size: 10px;
+}
+.nav-item .nav-link {
+  color: #e32e46;
+}
+.nav-item .nav-link:hover {
+  color: chocolate;
+  text-decoration: underline;
 }
 a {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
   text-align: center;
 }
