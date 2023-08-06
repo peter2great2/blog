@@ -1,14 +1,20 @@
-const tContainer = document.getElementById("t-container");
-const circleOne = document.getElementById("circle-one");
-const circleTwo = document.getElementById("circle-two");
+const hour = document.getElementById("hour");
+const minutes = document.getElementById("minutes");
+let seconds = document.getElementById("seconds");
+const ampm = document.getElementById("ampm");
+let date = new Date();
 
-circleTwo.addEventListener("click", () => {
-  tContainer.style.backgroundColor = "white";
-  circleOne.style.backgroundColor = "white";
-  circleTwo.style.backgroundColor = "black";
-});
-circleOne.addEventListener("click", () => {
-  tContainer.style.backgroundColor = "rgb(32, 31, 31)";
-  circleOne.style.backgroundColor = "white";
-  circleTwo.style.backgroundColor = "rgb(32, 31, 31)";
-});
+function timeAndDate() {
+  let hourTime = date.getHours();
+  let minutesTime = date.getMinutes();
+  let secondsTime = date.getSeconds();
+  hour.innerHTML = hourTime;
+  minutes.innerHTML = minutesTime;
+  // seconds.innerHTML = secondsTime;
+  for (let i = 0; i < secondsTime.length; i++) {
+    console.log(secondsTime[i]);
+  }
+  hourTime > 12 ? (ampm.innerHTML = "pm") : (ampm.innerHTML = "am");
+}
+
+timeAndDate();
