@@ -106,26 +106,12 @@ progress:hover {
   height: 600px;
 }
 input {
-  width: 500px;
-  border-top: black;
-  border-bottom: 1px solid blue;
-  border-right: black;
-  border-left: black;
-  background-color: black;
-  color: white;
+  width: 300px;
 }
-textarea {
-  border-top: black;
-  border-bottom: 1px solid blue;
-  border-right: black;
-  border-left: black;
-  background-color: black;
-}
-input:focus,
-textarea:focus {
-  border: red 1px solid;
-  outline: none;
-}
+/* textarea {
+  width: 300px;
+} */
+
 /* for the dark mode */
 .tcontainer {
   width: 40px;
