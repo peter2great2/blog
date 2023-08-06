@@ -130,7 +130,7 @@
             <div class="col-7">Bsc. Economics</div>
           </div>
           <div class="row d-flex">
-            <div class="col-5">Institution of Study:</div>
+            <div class="col-5">Institution:</div>
             <div class="col-7">University of Abuja</div>
           </div>
         </div>
@@ -399,6 +399,11 @@
               data-bs-slide-to="3"
               aria-label="Forth slide"
             ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="4"
+              aria-label="Fifth slide"
+            ></li>
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -439,6 +444,17 @@
                 src="assets/ludo.png"
                 class="w-100 d-block"
                 alt="Forth slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/my twitter clone.PNG"
+                class="w-100 d-block"
+                alt="Fifth slide"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h3></h3>
@@ -498,14 +514,17 @@
           class="d-flex justify-content-center flex-column align-items-center"
         >
           <div>
-            <input class="mb-3 mx-2" placeholder="Enter Your Name" />
+            <input class="mb-3 mx-2" placeholder="Name" type="text" />
+          </div>
+          <div>
+            <input class="mb-3 mx-2" placeholder="Email" type="email" />
           </div>
           <div>
             <div class="mb-3">
               <input
                 id="message"
                 rows="3"
-                placeholder="Enter Your Message"
+                placeholder="Message"
                 style="padding-bottom: 30px"
               />
             </div>
