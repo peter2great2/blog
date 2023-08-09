@@ -141,6 +141,7 @@ footer img:hover {
 }
 #time {
   font-style: italic;
+  font-size: 12px;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -219,6 +220,9 @@ footer img:hover {
   }
   footer img:hover {
     background-color: var(--primarycolor);
+  }
+  #time {
+    font-size: 10px;
   }
 }
 
