@@ -85,8 +85,10 @@ if (dayTime === 0) {
 }
 
 let dayTwoTime = date.getDate();
-if (dayTwo.innerHTML < 10) {
+if (dayTwoTime < 10) {
   dayTwo.innerHTML = `0${dayTwoTime}`;
+} else {
+  dayTwo.innerHTML = `${dayTwoTime}`;
 }
 
 let monthTime = date.getMonth();

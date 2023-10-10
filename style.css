@@ -1,9 +1,10 @@
 :root {
   --primarycolor: rgb(211, 50, 171);
   --secondarycolor: rgb(67, 67, 172);
-  --primaryfontsize: 18px;
+  --primaryfontsize: 1.2em;
   /* --gridcolors: #1e1e1e; */
   --gridcolors: rgb(77, 77, 95, 0.2);
+  --boxShadowColor: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -13,21 +14,22 @@
   /* border: 1px solid red; */
 }
 body {
-  font-size: 18px;
+  font-size: var(--primaryfontsize);
   background-image: url("assets/Sprinkle.svg");
   background-color: black;
 }
+
 .logo {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 #sambo {
-  font-size: 1.5em;
   cursor: pointer;
+  font-size: 2.1em;
 }
 
 nav {
   background-color: black;
-  font-size: 10px;
+  font-size: 0.5em;
 }
 .nav-item .nav-link {
   color: #e32e46;
@@ -56,8 +58,8 @@ a:any-link {
 /* this is the styling of the main section */
 
 .circle {
-  width: 300px;
-  height: 300px;
+  width: 15em;
+  height: 15em;
   border: 1px solid var(--primarycolor);
   border-radius: 50%;
   background-size: contain;
@@ -70,23 +72,29 @@ a:any-link {
 .grid-container {
   background-color: var(--gridcolors);
   border-radius: 04px;
-  margin: 5px;
   padding: 15px 10px;
-  width: fit-content;
-}
+  font-size: 0.8em;
 
+  box-shadow: 3px 2px 3px 3px var(--boxShadowColor);
+}
+.grid-container img {
+  width: 50px;
+}
+.section-four {
+  font-size: smaller;
+}
 .service-grid {
-  /* width: 400px; */
   height: 200px;
   background-color: var(--gridcolors);
   border-radius: 04px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 3px 2px 3px 3px var(--boxShadowColor);
 }
 /*  this is the start of section six*/
 progress {
-  width: 400px;
+  width: 300px;
   height: 10px;
   accent-color: var(--secondarycolor);
   position: relative;
@@ -107,34 +115,7 @@ progress:hover {
 input {
   width: 300px;
 }
-/* textarea {
-  width: 300px;
-} */
 
-/* for the dark mode */
-.tcontainer {
-  width: 40px;
-  height: 20px;
-  border: 1px solid white;
-  background-color: rgb(32, 31, 31);
-  margin-bottom: 20px;
-  margin-left: 20px;
-  border-radius: 20px;
-}
-
-.circle-toggle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-  margin: 1px;
-  cursor: pointer;
-}
-#circle-two {
-  position: relative;
-  bottom: 16px;
-  left: 20px;
-}
 footer img:hover {
   transform: rotate(180deg);
 }
