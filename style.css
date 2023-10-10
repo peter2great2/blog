@@ -65,20 +65,17 @@ a:any-link {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 20px 5px blue, 0 0 20px 5px red;
+  box-shadow: 0 0 20px 5px var(--primarycolor), 0 0 20px 5px var(--primarycolor);
   background-image: url("  assets/1651688434720-removebg-preview.png ");
 }
 
 .grid-container {
   background-color: var(--gridcolors);
   border-radius: 04px;
-  padding: 15px 10px;
-  font-size: 0.8em;
-
   box-shadow: 3px 2px 3px 3px var(--boxShadowColor);
 }
 .grid-container img {
-  width: 50px;
+  width: 30px;
 }
 .section-four {
   font-size: smaller;
@@ -144,7 +141,6 @@ footer img:hover {
   }
   ul {
     gap: 0;
-
     float: right;
     position: relative;
     left: 5px;
@@ -152,9 +148,6 @@ footer img:hover {
   }
   li {
     border-bottom: 1px solid black;
-  }
-  .tcontainer {
-    margin-right: 30px;
   }
 
   .dropdown-pic {
