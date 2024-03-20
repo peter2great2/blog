@@ -150,12 +150,12 @@ footer img:hover {
     border-bottom: 1px solid black;
   }
 
-  .dropdown-pic {
-    background-image: url("assets/1651688434720-removebg-preview.png");
+  /* .dropdown-pic {
+    background-image: url("assets/peter.JPG");
     background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
-  }
+  } */
   .circle {
     width: 200px;
     height: 200px;
