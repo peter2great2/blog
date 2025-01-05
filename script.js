@@ -12,46 +12,46 @@ seconds.innerHTML = secondsTime;
 ampm.innerHTML = hour < 12 ? (ampm.innerHTML = "am") : (ampm.innerHTML = "pm");
 
 function updateSeconds() {
-  secondsTime++;
-  // Decrement seconds
+   secondsTime++;
+   // Decrement seconds
 
-  if (secondsTime == 60) {
-    secondsTime = 0;
-    // Wrap around to 59 if seconds reach 0
+   if (secondsTime == 60) {
+      secondsTime = 0;
+      // Wrap around to 59 if seconds reach 0
 
-    updateMinutes();
-    // Call function to update minutes
-  }
-  seconds.innerHTML = secondsTime;
+      updateMinutes();
+      // Call function to update minutes
+   }
+   seconds.innerHTML = secondsTime;
 }
 
 function updateMinutes() {
-  minutesTime++;
-  // Decrement minutes
+   minutesTime++;
+   // Decrement minutes
 
-  if (minutesTime >= 59) {
-    minutesTime = 0;
-    // Wrap around to 59 if minutes reach 0
+   if (minutesTime >= 59) {
+      minutesTime = 0;
+      // Wrap around to 59 if minutes reach 0
 
-    updateHours();
-    // Call function to update hours
-  }
-  minutes.innerHTML = minutesTime;
+      updateHours();
+      // Call function to update hours
+   }
+   minutes.innerHTML = minutesTime;
 }
 
 function updateHours() {
-  hourTime++;
-  // Decrement hours
+   hourTime++;
+   // Decrement hours
 
-  if ((hourTime = 23)) {
-    hourTime = 0;
-    // Wrap around to 23 if hours reach 0
-  }
-  hour.innerHTML = hourTime;
+   if ((hourTime = 23)) {
+      hourTime = 0;
+      // Wrap around to 23 if hours reach 0
+   }
+   hour.innerHTML = hourTime;
 }
 
 function timeAndDate() {
-  updateSeconds();
+   updateSeconds();
 }
 
 timeAndDate();
@@ -69,55 +69,57 @@ let year = document.getElementById("year");
 
 let dayTime = date.getDay();
 if (dayTime === 0) {
-  day.innerHTML = "Sunday, ";
+   day.innerHTML = "Sunday, ";
 } else if (dayTime === 1) {
-  day.innerHTML = "Monday, ";
+   day.innerHTML = "Monday, ";
 } else if (dayTime === 2) {
-  day.innerHTML = "Tuesday, ";
+   day.innerHTML = "Tuesday, ";
 } else if (dayTime === 3) {
-  day.innerHTML = "Wednesday, ";
+   day.innerHTML = "Wednesday, ";
 } else if (dayTime === 4) {
-  day.innerHTML = "Thursday, ";
+   day.innerHTML = "Thursday, ";
 } else if (dayTime === 5) {
-  day.innerHTML = "Friday, ";
+   day.innerHTML = "Friday, ";
 } else {
-  day.innerHTML = "Saturday, ";
+   day.innerHTML = "Saturday, ";
 }
 
 let dayTwoTime = date.getDate();
 if (dayTwoTime < 10) {
-  dayTwo.innerHTML = `0${dayTwoTime}`;
+   dayTwo.innerHTML = `0${dayTwoTime}`;
 } else {
-  dayTwo.innerHTML = `${dayTwoTime}`;
+   dayTwo.innerHTML = `${dayTwoTime}`;
 }
 
 let monthTime = date.getMonth();
 if (monthTime === 0) {
-  month.innerHTML = " January";
+   month.innerHTML = " January";
 } else if (monthTime === 1) {
-  month.innerHTML = " February";
+   month.innerHTML = " February";
 } else if (monthTime === 2) {
-  month.innerHTML = " March";
+   month.innerHTML = " March";
 } else if (monthTime === 3) {
-  month.innerHTML = " April";
+   month.innerHTML = " April";
 } else if (monthTime === 4) {
-  month.innerHTML = " May";
+   month.innerHTML = " May";
 } else if (monthTime === 5) {
-  month.innerHTML = " June";
+   month.innerHTML = " June";
 } else if (monthTime === 6) {
-  month.innerHTML = " July";
+   month.innerHTML = " July";
 } else if (monthTime === 7) {
-  month.innerHTML = " August";
+   month.innerHTML = " August";
 } else if (monthTime === 8) {
-  month.innerHTML = " September";
+   month.innerHTML = " September";
 } else if (monthTime === 9) {
-  month.innerHTML = " October";
+   month.innerHTML = " October";
 } else if (monthTime === 10) {
-  month.innerHTML = " November";
+   month.innerHTML = " November";
 } else if (monthTime === 11) {
-  month.innerHTML = " December";
+   month.innerHTML = " December";
 }
+let year_copy = document.getElementById("year_copy");
 
 let yearTime = date.getFullYear();
 year.innerHTML = ` ${yearTime}`;
+year_copy.innerHTML = ` ${yearTime}`;
 console.log(monthTime);
